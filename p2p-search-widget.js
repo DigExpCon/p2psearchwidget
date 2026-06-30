@@ -72,11 +72,16 @@ if ( addstyles != "no" || addstyles == "" ) {
 
 // Build the form
 var form = form_heading + '<div class="ppc_widget">' + logo_image +
-'<form role="search" method="get" class="ppc-search-form" action="https://www.plains2peaks.org/?a=q&hs=1&r=1&results=1" target="_blank">'+
+'<form role="search" method="get" class="ppc-search-form" action="https://www.plains2peaks.org/" target="_blank">'+
 	'<label><span class="screen-reader-text">Search for:</span>'+
 		'<input type="search" class="ppc-search-field" placeholder="Search term" value="" name="txq">'+
 	'</label>'+ 
-	'<input type="hidden" name="partner" value="Plains to Peaks Collective">' + 
+	'<input type="hidden" name="a" value="q">' + 
+	'<input type="hidden" name="hs" value="1">' + 
+	'<input type="hidden" name="r" value="1">' + 
+	'<input type="hidden" name="results" value="1">' + 
+	'<input type="hidden" name="o" value="20">' + 
+	'<input type="hidden" name="puq" value="">' + 
 	partner +
 	'<input type="submit" class="ppc-search-submit" value="Go">'+
 '</form></div>';
