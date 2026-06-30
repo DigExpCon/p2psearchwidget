@@ -17,11 +17,11 @@ var addstyles = form_div.getAttribute('data-addstyles');
 // Build partners input
 if ( search_partner != "" ) {
   const partners = search_partner.split(",");
-  console.log(partners);
+  //console.log(partners);
 	var partner = '';
   var arrayLength = partners.length;
 	for (var i = 0; i < arrayLength; i++) {
-    console.log(partners[i]);
+    //console.log(partners[i]);
     partner += '<input type="hidden" name="puq" value="' + partners[i] + '">';
   }
 } else {
