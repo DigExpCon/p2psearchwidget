@@ -16,7 +16,14 @@ var addstyles = form_div.getAttribute('data-addstyles');
 
 // Build partners input
 if ( search_partner != "" ) {
-	var partner = '<input type="hidden" name="provider" value="' + search_partner + '">';
+  const partners = search_partner.split(",");
+  console.log(partners);
+	let partner = '';
+  var arrayLength = partners.length;
+	for (var i = 0; i < arrayLength; i++) {
+    console.log(partners[i]);
+    partner += '<input type="hidden" name="puq" value="' + partners[i] + '">';
+  }
 } else {
 	var partner = "";
 }
@@ -81,7 +88,6 @@ var form = form_heading + '<div class="ppc_widget">' + logo_image +
 	'<input type="hidden" name="r" value="1">' + 
 	'<input type="hidden" name="results" value="1">' + 
 	'<input type="hidden" name="o" value="20">' + 
-	'<input type="hidden" name="puq" value="">' + 
 	partner +
 	'<input type="submit" class="ppc-search-submit" value="Go">'+
 '</form></div>';
