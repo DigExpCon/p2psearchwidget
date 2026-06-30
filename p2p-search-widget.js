@@ -18,7 +18,7 @@ var addstyles = form_div.getAttribute('data-addstyles');
 if ( search_partner != "" ) {
   const partners = search_partner.split(",");
   console.log(partners);
-	let partner = '';
+	var partner = '';
   var arrayLength = partners.length;
 	for (var i = 0; i < arrayLength; i++) {
     console.log(partners[i]);
