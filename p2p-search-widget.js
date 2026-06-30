@@ -30,7 +30,7 @@ if ( heading && heading == "none" ) {
 	var form_heading  = '<h3 class="ppc-search-heading">Search Plains to Peaks Collective</h3>';
 }
 
-// Choose black or white image (not actually necessary for PPC widget)
+// Choose black or white image (not actually necessary b/c logo has transparent background)
 if ( color && color == "dark" ) {
 	var logo_image = '<img src="https://cdn.statically.io/gh/DigExpCon/ppcdplawidget@8da398dc4fdf31b45715dcdabadca06530470b09/PtoP_logo_trans.png" alt="" class="ppc_widget_logo" width="100px">';
 } else {
